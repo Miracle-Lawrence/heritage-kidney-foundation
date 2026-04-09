@@ -1,22 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Miracle Lawrence">
-    <meta name="description" content=""> 
-    <title>Home - FEAT NDUGWAS HERITAGE KIDNEY FOUNDATION</title>
-</head>
-<body>
-    <header>
-        <h1>Hello</h1>
-    </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Miracle Lawrence" />
+    <meta name="description" content="FEAT NDUGWAS Heritage Kidney Foundation: Abuja’s No.1 kidney health center. Promoting awareness, prevention, and expert care for kidney patients.">
     
-</body>
+    <link rel="Icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
+    <title>Home - FEAT NDUGWAS HERITAGE KIDNEY FOUNDATION</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- Logo -->
+        <!-- TOP ROW -->
+        <div class="nav-top">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.webp"></a>
+            <span> FEAT NDUGWAS HERITAGE KIDNEY FOUNDATION</span>
+          </div>
+
+          <!-- Hamburger -->
+          <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+            <!-- Hamburger Icon -->
+            <svg class="icon-menu" viewBox="0 0 24 24" width="26" height="26">
+              <path
+                d="M3 6h18M3 12h18M3 18h18"
+                stroke="#0a2c5e"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+
+            <!-- Close Icon -->
+            <svg class="icon-close" viewBox="0 0 24 24" width="26" height="26">
+              <path
+                d="M6 6l12 12M18 6l-12 12"
+                stroke="#0a2c5e"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+
+            <span class="menu-text">MENU</span>
+          </button>
+        </div>
+
+        <!-- Nav Links -->
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="donate.html" class="donate-btn">Donate</a></li>
+          <li><a href="#" id="searchToggle">⌕</a></li>
+        </ul>
+        <div class="search-box" id="searchBox">
+          <input
+            type="text"
+            id="desktopSearchInput"
+            placeholder="Search services..."
+          />
+          <div class="search-results" id="desktopSearchResults"></div>
+        </div>
+      </nav>
+      <!-- Mobile search -->
+      <div class="mobile-search">
+        <input type="text" placeholder="Search..." />
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+    <div class="overlay" id="overlay"></div>
+  </body>
 </html>
