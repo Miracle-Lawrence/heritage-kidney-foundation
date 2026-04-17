@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/main.js" defer></script>
     <script src="js/hero.js" defer></script>
+    <script src="js/patients.js" defer></script>
     <title>Home - FEAT NDUGWAS HERITAGE KIDNEY FOUNDATION</title>
   </head>
   <body>
@@ -82,57 +83,131 @@
 
     <main>
       <section class="hero">
-  <div class="hero-slider">
+        <div class="hero-slider">
+          <!-- Slide 1 -->
+          <div
+            class="hero-slide active"
+            style="background-image: url(&quot;images/hero1.webp&quot;)"
+          >
+            <div class="hero-content fade-up">
+              <h1>Saving Lives Through Kidney Care</h1>
+              <p>Join us in the fight against kidney disease</p>
+              <a href="donate.html" class="btn-primary">Donate Now</a>
+            </div>
+          </div>
 
-    <!-- Slide 1 -->
-    <div class="hero-slide active" style="background-image: url('images/hero1.webp');">
-      <div class="hero-content">
-        <h1>Saving Lives Through Kidney Care</h1>
-        <p>Join us in the fight against kidney disease</p>
-        <a href="donate.html" class="btn-primary">Donate Now</a>
+          <!-- Slide 2 -->
+          <div
+            class="hero-slide"
+            style="background-image: url(&quot;images/hero2.webp&quot;)"
+          >
+            <div class="hero-content slide-left">
+              <h1>Early Detection Saves Lives</h1>
+              <p>Support free kidney screenings</p>
+              <a href="donate.html" class="btn-primary">Donate Now</a>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div
+            class="hero-slide"
+            style="background-image: url(&quot;images/hero3.webp&quot;)"
+          >
+            <div class="hero-content slide-right">
+              <h1>Help Kidney Patients Survive Another Day</h1>
+              <p>Dialysis is Life — But Many Can’t Afford It</p>
+              <a href="donate.html" class="btn-primary">Donate Now</a>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div
+            class="hero-slide"
+            style="background-image: url(&quot;images/hero4.webp&quot;)"
+          >
+            <div class="hero-content fade-down">
+              <h1>Together We Can Make a Difference</h1>
+              <p>Give Hope to Those Battling Kidney Disease</p>
+              <a href="donate.html" class="btn-primary">Donate Now</a>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div
+            class="hero-slide"
+            style="background-image: url(&quot;images/hero5.webp&quot;)"
+          >
+            <div class="hero-content zoom-in">
+              <h1>Hope for Kidney Patients</h1>
+              <p>Help us give them a second chance</p>
+              <a href="donate.html" class="btn-primary">Donate Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="parallax-bg">
+        <section class="problem">
+          <div class="container">
+            <h2>The Reality Many Patients Face</h2>
+            <p>
+              Every day, individuals battling kidney failure struggle to afford
+              life-saving dialysis. For many families, the cost is
+              overwhelming—and without consistent treatment, survival becomes
+              uncertain.
+            </p>
+          </div>
+        </section>
+
+        <section class="impact">
+          <div class="container">
+            <div class="impact-box">
+              <h3>₦50,000</h3>
+              <p>Average cost of one dialysis session</p>
+            </div>
+
+            <div class="impact-box">
+              <h3>₦200,000+</h3>
+              <p>Monthly cost per patient</p>
+            </div>
+
+            <div class="impact-box">
+              <h3>3x Weekly</h3>
+              <p>Dialysis sessions needed to survive</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="about-foundation">
+          <div class="container">
+            <h2>About the Foundation</h2>
+            <p>
+              FEAT Ndugwas Heritage Kidney Foundation was established to support
+              patients who cannot afford life-saving kidney treatments. Though
+              connected to Heritage Kidney and Medical Care, the foundation
+              operates as a support system—allowing the public to contribute and
+              ensure that no patient is left without care due to financial
+              challenges.
+            </p>
+          </div>
+        </section>
+
+        <section class="cases">
+          <div class="container">
+            <h2>Patients Who Need Your Help</h2>
+
+            <div class="case-grid" id="caseContainer">
+              <!-- JS will inject cards here -->
+            </div>
+          </div>
+        </section>
       </div>
-    </div>
 
-    <!-- Slide 2 -->
-    <div class="hero-slide" style="background-image: url('images/hero2.webp');">
-      <div class="hero-content">
-        <h1>Early Detection Saves Lives</h1>
-        <p>Support free kidney screenings</p>
+      <section class="cta">
+        <h2>You Can Save a Life Today</h2>
+        <p>Your donation can give someone another chance to live</p>
         <a href="donate.html" class="btn-primary">Donate Now</a>
-      </div>
-    </div>
-
-    <!-- Slide 3 -->
-    <div class="hero-slide" style="background-image: url('images/hero3.webp');">
-      <div class="hero-content">
-        <h1>Community Health Outreach</h1>
-        <p>Reaching those who need it most</p>
-        <a href="donate.html" class="btn-primary">Donate Now</a>
-      </div>
-    </div>
-
-    <!-- Slide 4 -->
-    <div class="hero-slide" style="background-image: url('images/hero4.webp');">
-      <div class="hero-content">
-        <h1>Together We Can Make a Difference</h1>
-        <p>Your support matters</p>
-        <a href="donate.html" class="btn-primary">Donate Now</a>
-      </div>
-    </div>
-
-    <!-- Slide 5 -->
-    <div class="hero-slide" style="background-image: url('images/hero5.webp');">
-      <div class="hero-content">
-        <h1>Hope for Kidney Patients</h1>
-        <p>Help us give them a second chance</p>
-        <a href="donate.html" class="btn-primary">Donate Now</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
+      </section>
     </main>
 
     <div class="overlay" id="overlay"></div>
@@ -150,7 +225,6 @@
               alt="FEAT Ndugwas Heritage Kidney Foundation Logo"
             />
             <p>Promoting Kidney Health & Saving Lives</p>
-            
           </div>
         </div>
 
@@ -201,7 +275,10 @@
         <!-- Contact Us -->
         <div class="footer-section">
           <h4>Contact Us</h4>
-          <p>📍 Plot 1258 B11 Kaura District, Opp. Suncity Junction, Before African International college, Abuja.</p>
+          <p>
+            📍 Plot 1258 B11 Kaura District, Opp. Suncity Junction, Before
+            African International college, Abuja.
+          </p>
           <p>📞 Phone: +234 803 810 5601</p>
           <p>✉️ Email: info@featndugwaskidneyfoundation.org</p>
         </div>

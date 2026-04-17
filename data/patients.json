@@ -1,0 +1,25 @@
+{
+  "patients": [
+    {
+      "name": "John, 42",
+      "image": "images/patient1.webp",
+      "description": "Requires urgent dialysis support",
+      "raised": 200000,
+      "target": 500000
+    },
+    {
+      "name": "Mary, 35",
+      "image": "images/patient2.webp",
+      "description": "Needs kidney transplant assistance",
+      "raised": 150000,
+      "target": 600000
+    },
+    {
+      "name": "Samuel, 50",
+      "image": "images/patient3.webp",
+      "description": "Struggling with weekly dialysis costs",
+      "raised": 80000,
+      "target": 300000
+    }
+  ]
+}
