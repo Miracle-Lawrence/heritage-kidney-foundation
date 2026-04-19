@@ -724,7 +724,7 @@
 
 /* BACKGROUND WRAPPER */
 .parallax-bg {
-  background: url("/images/parallax-bg.webp") center/cover no-repeat fixed;
+  background: url("../images/parallax-bg.webp") center/cover no-repeat fixed;
   position: relative;
 }
 
