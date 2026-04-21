@@ -12,6 +12,7 @@
     <link rel="Icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/main.js" defer></script>
+    <script src="js/hero.js" defer></script>
     <title>Donate - FEAT NDUGWAS HERITAGE KIDNEY FOUNDATION</title>
   </head>
   <body>
@@ -22,7 +23,10 @@
         <div class="nav-top">
           <div class="logo">
             <a href="index.html">
-              <img src="images/logo.webp" alt="FEAT Ndugwas Heritage Kidney Foundation Logo">
+              <img
+                src="images/logo.webp"
+                alt="FEAT Ndugwas Heritage Kidney Foundation Logo"
+              />
             </a>
             <span> FEAT NDUGWAS HERITAGE KIDNEY FOUNDATION</span>
           </div>
@@ -76,8 +80,215 @@
         <input type="text" placeholder="Search..." />
       </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <section class="donate-hero">
+        <div class="donate-hero-content">
+          <h1>Give the Gift of Life</h1>
+          <p>
+            Your support can help provide dialysis, fund transplants, and give
+            hope to kidney patients who cannot afford treatment.
+          </p>
+          <a href="#donate-form" class="give-btn">Donate Now →</a>
+        </div>
+      </section>
+
+      <section class="donate-impact">
+        <div class="container">
+          <h2>Your Donation Makes a Difference</h2>
+
+          <div class="impact-grid">
+            <div>
+              <h3>₦50,000</h3>
+              <p>Supports a dialysis session</p>
+            </div>
+
+            <div>
+              <h3>₦500,000</h3>
+              <p>Helps fund a transplant</p>
+            </div>
+
+            <div>
+              <h3>₦10,000</h3>
+              <p>Provides essential medication</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="donate-section">
+
+  <div class="donate-container">
+
+    <h1>Save a Life Today</h1>
+    <p class="donate-subtext">
+      Your support helps kidney patients access life-saving treatment.
+    </p>
+
+    <!-- IMPACT COUNTER -->
+    <div class="impact-box">
+      <h3>Lives Impacted</h3>
+      <p class="impact-number" id="impactCounter">0</p>
+    </div>
+
+    <!-- AMOUNT SELECTION -->
+    <div class="amount-options">
+      <button class="amount-btn" data-amount="5000">₦5,000</button>
+      <button class="amount-btn" data-amount="10000">₦10,000</button>
+      <button class="amount-btn" data-amount="20000">₦20,000</button>
+      <button class="amount-btn" data-amount="50000">₦50,000</button>
+    </div>
+
+    <!-- CUSTOM INPUT -->
+    <div class="custom-amount">
+      <input type="number" id="amountInput" placeholder="Enter custom amount (₦)">
+    </div>
+
+    <!-- DONATE BUTTON -->
+    <button class="donate-btn" onclick="payWithPaystack()">
+      Donate Now
+    </button>
+
+  </div>
+
+</section>
+
+      <section id="donate-form" class="donate-form">
+        <div class="container">
+          <h2>Make a Donation</h2>
+
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Full Name" required />
+            </div>
+
+            <div class="form-group">
+              <input type="email" placeholder="Email Address" required />
+            </div>
+
+            <div class="form-group">
+              <input type="number" placeholder="Enter Amount (₦)" required />
+            </div>
+
+            <button type="submit" class="donate-btn">
+              Proceed to Payment →
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="donate-trust">
+        <div class="container">
+          <p>
+            100% of your donation goes directly to supporting kidney patients.
+            We are committed to transparency, accountability, and impact.
+          </p>
+        </div>
+      </section>
+    </main>
     <div class="overlay" id="overlay"></div>
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left Section -->
+        <div class="footer-section">
+          <p>
+            FEAT Ndugwas Heritage Kidney Foundation is a non-profit organization
+            committed to kidney health awareness and support.
+          </p>
+          <div class="logo">
+            <img
+              src="images/logo.webp"
+              alt="FEAT Ndugwas Heritage Kidney Foundation Logo"
+            />
+            <p>Promoting Kidney Health & Saving Lives</p>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="donate.html">Donate Now</a></li>
+            <li><a href="#">Become a Volunteer</a></li>
+            <li><a href="events.html">Our Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- News -->
+        <div class="footer-section">
+          <h4>News</h4>
+          <ul class="news-list">
+            <li>
+              <img src="images/news1.webp" alt="Kidney Awareness Campaign" />
+              <div>
+                <p>
+                  <a href="#">Raising Awareness on Kidney Disease Prevention</a>
+                </p>
+                <span>March 10, 2026</span>
+              </div>
+            </li>
+            <li>
+              <img src="images/news2.webp" alt="Health Outreach" />
+              <div>
+                <p>
+                  <a href="#">Community Health Outreach and Free Screening</a>
+                </p>
+                <span>February 18, 2026</span>
+              </div>
+            </li>
+            <li>
+              <img src="images/news3.webp" alt="World Kidney Day" />
+              <div>
+                <p><a href="#">Celebrating World Kidney Day with Impact</a></p>
+                <span>March 14, 2026</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>
+            📍 Plot 1258 B11 Kaura District, Opp. Suncity Junction, Before
+            African International college, Abuja.
+          </p>
+          <p>📞 Phone: +234 803 810 5601</p>
+          <p>✉️ Email: info@featndugwaskidneyfoundation.org</p>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#" target="_blank" aria-label="Facebook">
+            <img src="images/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="#" target="_blank" aria-label="WhatsApp">
+            <img src="images/whatsapp.svg" alt="WhatsApp" />
+          </a>
+          <a href="#" target="_blank" aria-label="Instagram">
+            <img src="images/instagram.svg" alt="Instagram" />
+          </a>
+          <a href="#" target="_blank" aria-label="X">
+            <img src="images/x.svg" alt="X (Twitter)" />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © All rights reserved 2026 FEAT NDUGWAS HERITAGE KIDNEY FOUNDATION
+        </p>
+      </div>
+      <div class="designer">
+        <p>
+          Designed by
+          <span>Miracle Lawrence</span> &
+          <span>Umedike Ukpai</span>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
