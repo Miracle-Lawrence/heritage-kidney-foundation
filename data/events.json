@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Kidney Health Awareness",
+    "date": "2026-10-23",
+    "location": "Lagos, Nigeria",
+    "description": "Join us to spread awareness about kidney health.",
+    "image": "images/event1.jpg",
+    "details": "This event focuses on educating the public about kidney disease prevention and early detection."
+  },
+  {
+    "title": "Free Medical Outreach",
+    "date": "2026-11-10",
+    "location": "Abuja, Nigeria",
+    "description": "Providing free kidney screening and consultation.",
+    "image": "images/event2.jpg",
+    "details": "Free screening for blood pressure, sugar levels, and kidney function for underserved communities."
+  },
+  {
+    "title": "Fundraising Gala",
+    "date": "2026-12-05",
+    "location": "Port Harcourt",
+    "description": "Support patients through donations.",
+    "image": "images/event3.jpg",
+    "details": "An elegant fundraising dinner aimed at raising funds for dialysis and transplant support."
+  },
+  {
+    "title": "Youth Health Seminar",
+    "date": "2026-09-15",
+    "location": "Ibadan",
+    "description": "Educating young people on healthy living.",
+    "image": "images/event4.jpg",
+    "details": "Interactive sessions teaching students how to maintain kidney-friendly lifestyles."
+  },
+  {
+    "title": "Community Walk",
+    "date": "2026-08-20",
+    "location": "Enugu",
+    "description": "Walk for kidney awareness.",
+    "image": "images/event5.jpg",
+    "details": "A public awareness walk with free flyers and health talks."
+  },
+  {
+    "title": "Dialysis Support Drive",
+    "date": "2026-07-12",
+    "location": "Kano",
+    "description": "Helping patients afford dialysis.",
+    "image": "images/event6.jpg",
+    "details": "Support program aimed at subsidizing dialysis treatments."
+  },
+  {
+    "title": "Volunteer Training",
+    "date": "2026-06-18",
+    "location": "Jos",
+    "description": "Training new volunteers.",
+    "image": "images/event7.jpg",
+    "details": "Equipping volunteers with skills to assist in outreach programs."
+  },
+  {
+    "title": "School Outreach",
+    "date": "2026-05-09",
+    "location": "Benin",
+    "description": "Health education in schools.",
+    "image": "images/event8.jpg",
+    "details": "Teaching students about hydration and kidney care."
+  },
+  {
+    "title": "Charity Football Match",
+    "date": "2026-04-25",
+    "location": "Uyo",
+    "description": "Sports for a cause.",
+    "image": "images/event9.jpg",
+    "details": "A fun football match to raise awareness and funds."
+  },
+  {
+    "title": "World Kidney Day Event",
+    "date": "2026-03-14",
+    "location": "Lagos",
+    "description": "Global awareness celebration.",
+    "image": "images/event10.jpg",
+    "details": "Celebrating World Kidney Day with talks, screenings, and media campaigns."
+  }
+]

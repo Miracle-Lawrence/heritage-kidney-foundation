@@ -3,6 +3,15 @@ const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
 const overlay = document.getElementById("overlay");
 
+
+/* INIT PAGE */
+document.addEventListener("DOMContentLoaded", () => {
+
+  // Only runs if container exists (safe for multi-page site)
+  loadEvents("events-container");
+
+});
+
 // Toggle mobile menu
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");

@@ -12,6 +12,7 @@
     <link rel="Icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/main.js" defer></script>
+    <script type="module" src="js/events.js"></script>
     <title>Events - FEAT NDUGWAS HERITAGE KIDNEY FOUNDATION</title>
   </head>
   <body>
@@ -21,7 +22,11 @@
         <!-- TOP ROW -->
         <div class="nav-top">
           <div class="logo">
-            <a href="index.html"><img src="images/logo.webp" alt="FEAT Ndugwas Heritage Kidney Foundation Logo"></a>
+            <a href="index.html"
+              ><img
+                src="images/logo.webp"
+                alt="FEAT Ndugwas Heritage Kidney Foundation Logo"
+            /></a>
             <span> FEAT NDUGWAS HERITAGE KIDNEY FOUNDATION</span>
           </div>
 
@@ -80,8 +85,139 @@
           <h1>Events</h1>
         </div>
       </section>
+
+      <section class="events-section">
+        <h2>Upcoming Events</h2>
+        <div id="events-container" class="events-grid"></div>
+      </section>
+
+      <div id="event-modal" class="modal">
+  <div class="modal-content">
+
+    <span class="close-btn">&times;</span>
+
+    <div class="modal-image">
+      <img id="modal-img" src="" alt="">
+    </div>
+
+    <div class="modal-body">
+      <h3 id="modal-title"></h3>
+      <p id="modal-details"></p>
+      <p id="modal-location"></p>
+    </div>
+
+    <div class="modal-nav">
+      <button id="prev-btn">← Prev</button>
+      <button id="next-btn">Next →</button>
+    </div>
+
+  </div>
+</div>
     </main>
-    <footer></footer>
-    <div class="overlay" id="overlay"></div>
+      <div class="overlay" id="overlay"></div>
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left Section -->
+        <div class="footer-section">
+          <p>
+            FEAT Ndugwas Heritage Kidney Foundation is a non-profit organization
+            committed to kidney health awareness and support.
+          </p>
+          <div class="logo">
+            <img
+              src="images/logo.webp"
+              alt="FEAT Ndugwas Heritage Kidney Foundation Logo"
+            />
+            <p>Promoting Kidney Health & Saving Lives</p>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="donate.html">Donate Now</a></li>
+            <li><a href="#">Become a Volunteer</a></li>
+            <li><a href="events.html">Our Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- News -->
+        <div class="footer-section">
+          <h4>News</h4>
+          <ul class="news-list">
+            <li>
+              <img src="images/news1.webp" alt="Kidney Awareness Campaign" />
+              <div>
+                <p>
+                  <a href="#">Raising Awareness on Kidney Disease Prevention</a>
+                </p>
+                <span>March 10, 2026</span>
+              </div>
+            </li>
+            <li>
+              <img src="images/news2.webp" alt="Health Outreach" />
+              <div>
+                <p>
+                  <a href="#">Community Health Outreach and Free Screening</a>
+                </p>
+                <span>February 18, 2026</span>
+              </div>
+            </li>
+            <li>
+              <img src="images/news3.webp" alt="World Kidney Day" />
+              <div>
+                <p><a href="#">Celebrating World Kidney Day with Impact</a></p>
+                <span>March 14, 2026</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>
+            📍 Plot 1258 B11 Kaura District, Opp. Suncity Junction, Before
+            African International college, Abuja.
+          </p>
+          <p>📞 Phone: +234 803 810 5601</p>
+          <p>✉️ Email: info@featndugwaskidneyfoundation.org</p>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#" target="_blank" aria-label="Facebook">
+            <img src="images/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="#" target="_blank" aria-label="WhatsApp">
+            <img src="images/whatsapp.svg" alt="WhatsApp" />
+          </a>
+          <a href="#" target="_blank" aria-label="Instagram">
+            <img src="images/instagram.svg" alt="Instagram" />
+          </a>
+          <a href="#" target="_blank" aria-label="X">
+            <img src="images/x.svg" alt="X (Twitter)" />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © All rights reserved 2026 FEAT NDUGWAS HERITAGE KIDNEY FOUNDATION
+        </p>
+      </div>
+      <div class="designer">
+        <p>
+          Designed by
+          <span>Miracle Lawrence</span> &
+          <span>Umedike Ukpai</span>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
