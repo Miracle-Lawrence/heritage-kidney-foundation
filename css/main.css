@@ -1797,5 +1797,15 @@ input:focus {
     left: 0;
     top: -20px;
   }
+
+  .hero-slide,
+  .donate-hero,
+  .parallax-bg,
+  .event-hero,
+  .gallery-hero,
+  .founder-teaser {
+    background-size: cover;
+    background-position: center top; /* 👈 KEY FIX */
+  }
   
 }
