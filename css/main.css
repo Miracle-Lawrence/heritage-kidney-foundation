@@ -724,7 +724,7 @@
 
 /* BACKGROUND WRAPPER */
 .parallax-bg {
-  background: url("/images/parallax-bg.webp") center/cover no-repeat fixed;
+  background: url("../images/parallax-bg.webp") center/cover no-repeat fixed;
   position: relative;
 }
 
@@ -1086,7 +1086,7 @@
   color: #fff;
 
   /* FIXED BACKGROUND */
-  background: url("/images/founder-bg.webp") center/cover no-repeat;
+  background: url("../images/founder-bg.webp") center/cover no-repeat;
   background-attachment: fixed;
 }
 
@@ -1374,7 +1374,7 @@
   height: 100vh;
   background:
     linear-gradient(rgba(11,28,44,0.8), rgba(11,28,44,0.8)),
-    url("/images/donate.webp") center/cover no-repeat;
+    url("../images/donate.webp") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1542,7 +1542,7 @@ input:focus {
 .donate-section {
   padding: 100px 20px;
   background: linear-gradient(rgba(11,28,44,0.9), rgba(11,28,44,0.9)),
-              url("/images/donate-bg.webp") center/cover no-repeat;
+              url("../images/donate-bg.webp") center/cover no-repeat;
   text-align: center;
   color: #fff;
 }
@@ -1631,6 +1631,73 @@ input:focus {
   line-height: 1.6;
 }
 
+
+/* =========================
+   EVENTS PAGE HEADER
+========================= */
+
+.event-hero {
+  position: relative;
+  height: 50vh;              /* Short header height */
+  min-height: 220px;
+  background: url("../images/events.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.gallery-hero {
+  position: relative;
+  height: 50vh;              /* Short header height */
+  min-height: 220px;
+  background: url("../images/gallery.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+/* Dark overlay for readability */
+.event-hero::before, .gallery-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.65)
+  );
+}
+
+/* Content */
+.event-hero-overlay, .gallery-hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.event-hero-overlay h1, .gallery-hero-overlay h1 {
+  color: #ffffff;
+  font-size: clamp(28px, 4vw, 48px);
+  letter-spacing: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Elegant gold underline */
+.event-hero-overlay h1::after, .gallery-hero-overlay h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 15px auto 0;
+  background: #d4af37;
+  border-radius: 3px;
+}
+
 /* MOBILE STYLING */
 
 @media (max-width: 768px) {
@@ -1638,6 +1705,9 @@ input:focus {
     padding: 15px 20px;
   }
 
+  .gallery-hero, .event-hero {
+    height: 25vh;  
+  }
   /* SHOW HAMBURGER */
   .hamburger {
     display: flex;
