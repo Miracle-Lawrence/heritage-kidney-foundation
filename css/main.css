@@ -78,7 +78,7 @@
 }
 
 /* DESKTOP CENTERING */
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
   .navbar {
     flex-direction: row; /* 🔥 make it horizontal */
     align-items: center;
