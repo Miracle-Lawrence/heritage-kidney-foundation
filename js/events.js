@@ -2,6 +2,8 @@ const container = document.getElementById("events-container");
 
 let eventsData = [];
 let currentIndex = 0;
+let currentEventIndex = 0;
+let currentImageIndex = 0;
 
 /* FORMAT DATE */
 function formatDate(dateStr) {
@@ -19,7 +21,7 @@ function createCard(event, index) {
   return `
     <div class="event-card">
       <div class="event-image">
-        <img src="${event.image}" />
+        <img src="${event.images[0]}" />
         <div class="event-date">
           <span>${day}</span>
           <small>${month}</small>
@@ -58,15 +60,20 @@ const modalLocation = document.getElementById("modal-location");
 
 /* OPEN MODAL */
 function openModal(index) {
-  currentIndex = index;
+  currentEventIndex = index;
+  currentImageIndex = 0;
+
   const event = eventsData[index];
 
-  modalImg.src = event.image;
+  updateModalContent(event);
+  modal.classList.add("active");
+}
+
+function updateModalContent(event) {
+  modalImg.src = event.images[currentImageIndex];
   modalTitle.textContent = event.title;
   modalDetails.textContent = event.details;
   modalLocation.textContent = "📍 " + event.location;
-
-  modal.classList.add("active");
 }
 
 /* ATTACH CLICK EVENTS */
@@ -81,13 +88,32 @@ function attachEvents() {
 
 /* NAVIGATION */
 document.getElementById("next-btn").onclick = () => {
-  currentIndex = (currentIndex + 1) % eventsData.length;
-  openModal(currentIndex);
+  const event = eventsData[currentEventIndex];
+
+  if (currentImageIndex < event.images.length - 1) {
+    currentImageIndex++;
+  } else {
+    // move to next event
+    currentEventIndex = (currentEventIndex + 1) % eventsData.length;
+    currentImageIndex = 0;
+  }
+
+  updateModalContent(eventsData[currentEventIndex]);
 };
 
 document.getElementById("prev-btn").onclick = () => {
-  currentIndex = (currentIndex - 1 + eventsData.length) % eventsData.length;
-  openModal(currentIndex);
+  if (currentImageIndex > 0) {
+    currentImageIndex--;
+  } else {
+    // move to previous event
+    currentEventIndex =
+      (currentEventIndex - 1 + eventsData.length) % eventsData.length;
+
+    const prevEvent = eventsData[currentEventIndex];
+    currentImageIndex = prevEvent.images.length - 1;
+  }
+
+  updateModalContent(eventsData[currentEventIndex]);
 };
 
 /* CLOSE */
@@ -97,6 +123,14 @@ document.querySelector(".close-btn").onclick = () => {
 
 modal.addEventListener("click", (e) => {
   if (e.target === modal) modal.classList.remove("active");
+});
+
+document.getElementById("volunteer-form")?.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  alert("Thank you for volunteering! We will contact you soon.");
+
+  e.target.reset();
 });
 
 /* INIT */

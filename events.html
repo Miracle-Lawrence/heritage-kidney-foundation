@@ -61,7 +61,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="events.html">Events</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
+
           <li><a href="donate.html" class="donate-btn">Donate</a></li>
           <li><a href="#" id="searchToggle">⌕</a></li>
         </ul>
@@ -92,29 +92,70 @@
       </section>
 
       <div id="event-modal" class="modal">
-  <div class="modal-content">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
 
-    <span class="close-btn">&times;</span>
+          <div class="modal-image">
+            <img id="modal-img" src="" alt="" />
+          </div>
 
-    <div class="modal-image">
-      <img id="modal-img" src="" alt="">
-    </div>
+          <div class="modal-body">
+            <h3 id="modal-title"></h3>
+            <p id="modal-details"></p>
+            <p id="modal-location"></p>
+          </div>
 
-    <div class="modal-body">
-      <h3 id="modal-title"></h3>
-      <p id="modal-details"></p>
-      <p id="modal-location"></p>
-    </div>
+          <div class="modal-nav">
+            <button id="prev-btn">← Prev</button>
+            <button id="next-btn">Next →</button>
+          </div>
+        </div>
+      </div>
 
-    <div class="modal-nav">
-      <button id="prev-btn">← Prev</button>
-      <button id="next-btn">Next →</button>
-    </div>
+      <section class="volunteer-section" id="volunteer-section">
+        <div class="volunteer-content">
+          <h2>Become a Volunteer</h2>
+          <p>
+            Be part of our mission to support lives and bring hope to
+            communities. Join our team and make a real difference.
+          </p>
+        </div>
 
-  </div>
-</div>
+        <form id="volunteer-form" class="volunteer-form">
+          <div class="form-group">
+            <input type="text" placeholder="Full Name" required />
+          </div>
+
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" required />
+          </div>
+
+          <div class="form-group">
+            <input type="tel" placeholder="Phone Number" required />
+          </div>
+
+          <div class="form-group">
+            <label for="role">Preferred Role</label>
+            <select id="role" required>
+              <option value="">Select a role</option>
+              <option>Event Volunteer</option>
+              <option>Outreach Support</option>
+              <option>Medical Assistance</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <textarea
+              placeholder="Why do you want to volunteer?"
+              rows="4"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="volunteer-btn">Join as Volunteer</button>
+        </form>
+      </section>
     </main>
-      <div class="overlay" id="overlay"></div>
+    <div class="overlay" id="overlay"></div>
     <footer class="footer">
       <div class="footer-container">
         <!-- Left Section -->
@@ -138,9 +179,8 @@
           <ul>
             <li><a href="about.html">About Us</a></li>
             <li><a href="donate.html">Donate Now</a></li>
-            <li><a href="#">Become a Volunteer</a></li>
+            <li><a href="events.html#volunteer-section">Become a Volunteer</a></li>
             <li><a href="events.html">Our Events</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
           </ul>
         </div>
 
