@@ -113,47 +113,63 @@
       </div>
 
       <section class="volunteer-section" id="volunteer-section">
-        <div class="volunteer-content">
-          <h2>Become a Volunteer</h2>
-          <p>
-            Be part of our mission to support lives and bring hope to
-            communities. Join our team and make a real difference.
-          </p>
-        </div>
 
-        <form id="volunteer-form" class="volunteer-form">
-          <div class="form-group">
-            <input type="text" placeholder="Full Name" required />
-          </div>
+  <div class="volunteer-content">
+    <h2>Join Our Mission</h2>
+    <p>
+      Whether as a volunteer or a partner, your support helps us save lives
+      and bring hope to kidney patients.
+    </p>
+  </div>
 
-          <div class="form-group">
-            <input type="email" placeholder="Email Address" required />
-          </div>
+  <div class="forms-wrapper">
 
-          <div class="form-group">
-            <input type="tel" placeholder="Phone Number" required />
-          </div>
+    <!-- VOLUNTEER FORM -->
+    <form id="volunteer-form" class="volunteer-form">
+      <h3 class="form-title">Become a Volunteer</h3>
 
-          <div class="form-group">
-            <label for="role">Preferred Role</label>
-            <select id="role" required>
-              <option value="">Select a role</option>
-              <option>Event Volunteer</option>
-              <option>Outreach Support</option>
-              <option>Medical Assistance</option>
-            </select>
-          </div>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="tel" placeholder="Phone Number" required />
 
-          <div class="form-group">
-            <textarea
-              placeholder="Why do you want to volunteer?"
-              rows="4"
-            ></textarea>
-          </div>
+      <select required title="Preferred Role">
+        <option value="">Preferred Role</option>
+        <option>Event Volunteer</option>
+        <option>Outreach Support</option>
+        <option>Medical Assistance</option>
+      </select>
 
-          <button type="submit" class="volunteer-btn">Join as Volunteer</button>
-        </form>
-      </section>
+      <textarea placeholder="Why do you want to volunteer?" rows="4"></textarea>
+
+      <button type="submit" class="volunteer-btn">Join as Volunteer</button>
+    </form>
+
+
+    <!-- PARTNER FORM -->
+    <form id="partner-form" class="volunteer-form">
+      <h3 class="form-title">Become a Partner</h3>
+
+      <input type="text" placeholder="Organization Name" required />
+      <input type="text" placeholder="Contact Person" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+
+      <select required title="Preferred Role">
+        <option value="">Type of Partnership</option>
+        <option>Financial Support</option>
+        <option>Medical Support</option>
+        <option>NGO Collaboration</option>
+        <option>Government Agency</option>
+      </select>
+
+      <textarea placeholder="How would you like to partner with us?" rows="4"></textarea>
+
+      <button type="submit" class="volunteer-btn">Submit Partnership</button>
+    </form>
+
+  </div>
+
+</section>
     </main>
     <div class="overlay" id="overlay"></div>
     <footer class="footer">
