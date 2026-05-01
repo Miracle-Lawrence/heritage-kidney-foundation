@@ -12,6 +12,7 @@
     <link rel="Icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/main.js" defer></script>
+    <script src="js/forms.js" defer></script>
     <script type="module" src="js/events.js"></script>
     <title>Events - FEAT NDUGWAS HERITAGE KIDNEY FOUNDATION</title>
   </head>
@@ -113,63 +114,106 @@
       </div>
 
       <section class="volunteer-section" id="volunteer-section">
+        <div class="volunteer-content">
+          <h2>Join Our Mission</h2>
+          <p>
+            Whether as a volunteer or a partner, your support helps us save
+            lives and bring hope to kidney patients.
+          </p>
+        </div>
 
-  <div class="volunteer-content">
-    <h2>Join Our Mission</h2>
-    <p>
-      Whether as a volunteer or a partner, your support helps us save lives
-      and bring hope to kidney patients.
-    </p>
-  </div>
+        <div class="forms-wrapper">
+          <!-- VOLUNTEER FORM -->
+          <form id="volunteer-form" class="volunteer-form">
+            <h3 class="form-title">Become a Volunteer</h3>
 
-  <div class="forms-wrapper">
+            <input
+              type="text"
+              name="full_name"
+              placeholder="Full Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              required
+            />
 
-    <!-- VOLUNTEER FORM -->
-    <form id="volunteer-form" class="volunteer-form">
-      <h3 class="form-title">Become a Volunteer</h3>
+            <select name="role" aria-label="Preferred Role" required>
+              <option value="">Preferred Role</option>
+              <option>Event Volunteer</option>
+              <option>Outreach Support</option>
+              <option>Medical Assistance</option>
+            </select>
 
-      <input type="text" placeholder="Full Name" required />
-      <input type="email" placeholder="Email Address" required />
-      <input type="tel" placeholder="Phone Number" required />
+            <textarea
+              name="message"
+              placeholder="Why do you want to volunteer?"
+              rows="4"
+            ></textarea>
 
-      <select required title="Preferred Role">
-        <option value="">Preferred Role</option>
-        <option>Event Volunteer</option>
-        <option>Outreach Support</option>
-        <option>Medical Assistance</option>
-      </select>
+            <button type="submit" class="volunteer-btn">
+              Join as Volunteer
+            </button>
+          </form>
 
-      <textarea placeholder="Why do you want to volunteer?" rows="4"></textarea>
+          <!-- PARTNER FORM -->
+          <form id="partner-form" class="volunteer-form">
+            <h3 class="form-title">Become a Partner</h3>
 
-      <button type="submit" class="volunteer-btn">Join as Volunteer</button>
-    </form>
+            <input
+              type="text"
+              name="organization"
+              placeholder="Organization Name"
+              required
+            />
+            <input
+              type="text"
+              name="contact_person"
+              placeholder="Contact Person"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              required
+            />
 
+            <label for="partnership_type">Type of Partnership</label>
+            <select id="partnership_type" name="partnership_type" required>
+              <option value="">Select Partnership Type</option>
+              <option>Financial Support</option>
+              <option>Medical Support</option>
+              <option>NGO Collaboration</option>
+              <option>Government Agency</option>
+            </select>
 
-    <!-- PARTNER FORM -->
-    <form id="partner-form" class="volunteer-form">
-      <h3 class="form-title">Become a Partner</h3>
+            <textarea
+              name="message"
+              placeholder="How would you like to partner with us?"
+              rows="4"
+            ></textarea>
 
-      <input type="text" placeholder="Organization Name" required />
-      <input type="text" placeholder="Contact Person" required />
-      <input type="email" placeholder="Email Address" required />
-      <input type="tel" placeholder="Phone Number" required />
-
-      <select required title="Preferred Role">
-        <option value="">Type of Partnership</option>
-        <option>Financial Support</option>
-        <option>Medical Support</option>
-        <option>NGO Collaboration</option>
-        <option>Government Agency</option>
-      </select>
-
-      <textarea placeholder="How would you like to partner with us?" rows="4"></textarea>
-
-      <button type="submit" class="volunteer-btn">Submit Partnership</button>
-    </form>
-
-  </div>
-
-</section>
+            <button type="submit" class="volunteer-btn">
+              Submit Partnership
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
     <div class="overlay" id="overlay"></div>
     <footer class="footer">
@@ -195,7 +239,9 @@
           <ul>
             <li><a href="about.html">About Us</a></li>
             <li><a href="donate.html">Donate Now</a></li>
-            <li><a href="events.html#volunteer-section">Become a Volunteer</a></li>
+            <li>
+              <a href="events.html#volunteer-section">Become a Volunteer</a>
+            </li>
             <li><a href="events.html">Our Events</a></li>
           </ul>
         </div>
@@ -275,5 +321,12 @@
         </p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script>
+      (function () {
+        emailjs.init("LkrIRaAyU3ocIvo4U"); // replace this
+      })();
+    </script>
   </body>
 </html>

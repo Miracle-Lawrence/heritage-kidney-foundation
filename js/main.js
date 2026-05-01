@@ -3,13 +3,10 @@ const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
 const overlay = document.getElementById("overlay");
 
-
 /* INIT PAGE */
 document.addEventListener("DOMContentLoaded", () => {
-
   // Only runs if container exists (safe for multi-page site)
   loadEvents("events-container");
-
 });
 
 // Toggle mobile menu
@@ -145,3 +142,66 @@ navItems.forEach((link) => {
     link.classList.add("active");
   }
 });
+
+const modal = document.getElementById("donationModal");
+const closeModal = document.getElementById("closeModal");
+const donationAmountText = document.getElementById("donationAmount");
+const whatsappLink = document.getElementById("whatsappLink");
+
+// Replace with your actual WhatsApp number
+const whatsappNumber = "2348038105601";
+
+// Format currency
+function formatCurrency(amount) {
+  return "₦" + Number(amount).toLocaleString();
+}
+
+// Open modal
+function openDonationModal(amount) {
+  donationAmountText.textContent = formatCurrency(amount);
+
+  const message = `Hello, I just donated ${formatCurrency(amount)} to Heritage Kidney and Medical Care. Here is my receipt.`;
+  const encodedMessage = encodeURIComponent(message);
+
+  whatsappLink.href = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+  modal.style.display = "flex";
+}
+
+// Close modal
+closeModal.onclick = () => {
+  modal.style.display = "none";
+};
+
+window.onclick = (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+};
+
+// Handle amount buttons
+document.querySelectorAll(".amount-options button").forEach((btn) => {
+  btn.addEventListener("click", function () {
+    const amount = this.dataset.amount;
+    const box = this.closest(".donation-box");
+    box.querySelector(".amount-input").value = amount;
+  });
+});
+
+// Override donate buttons
+function payWithPaystack(type) {
+  const box = document.querySelector(`.${type}`);
+  const input = box.querySelector(".amount-input").value;
+
+  if (!input || input <= 0) {
+    alert("Please enter a valid amount");
+    return;
+  }
+
+  openDonationModal(input);
+}
+
+function copyAccount() {
+  navigator.clipboard.writeText("9068699057");
+  alert("Account number copied!");
+}
