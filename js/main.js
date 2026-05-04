@@ -149,7 +149,7 @@ const donationAmountText = document.getElementById("donationAmount");
 const whatsappLink = document.getElementById("whatsappLink");
 
 // Replace with your actual WhatsApp number
-const whatsappNumber = "2348038105601";
+const whatsappNumber = "2349167760222";
 
 // Format currency
 function formatCurrency(amount) {
@@ -202,6 +202,6 @@ function payWithPaystack(type) {
 }
 
 function copyAccount() {
-  navigator.clipboard.writeText("9068699057");
+  navigator.clipboard.writeText("0510034648");
   alert("Account number copied!");
 }
