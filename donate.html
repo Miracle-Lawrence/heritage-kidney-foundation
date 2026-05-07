@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/main.js" defer></script>
     <script src="js/hero.js" defer></script>
+    <script src="js/donate.js" defer></script>
     <title>Donate - FEAT NDUGWAS HERITAGE KIDNEY FOUNDATION</title>
   </head>
   <body>
@@ -107,6 +108,17 @@
               alive.
             </p>
 
+            <!-- PATIENT SELECT -->
+            <label for="beneficiary-select">Select Beneficiary</label>
+            <select
+              id="beneficiary-select"
+              class="patient-select dialysis-patient"
+            >
+              <option value="FNH Foundation">
+                Donate to Foundation General Support
+              </option>
+            </select>
+
             <div class="amount-options">
               <button data-amount="50000">₦50K</button>
               <button data-amount="100000">₦100K</button>
@@ -133,6 +145,15 @@
               Help patients access life-saving kidney transplant procedures.
             </p>
 
+            <label for="transplant-patient-select">Select Patient</label>
+
+            <select
+              id="beneficiary-select"
+              class="patient-select transplant-patient"
+            >
+              <option value="FNH Foundation">Donate to Foundation</option>
+            </select>
+
             <div class="amount-options">
               <button data-amount="500000">₦500K</button>
               <button data-amount="1000000">₦1M</button>
@@ -154,7 +175,6 @@
         </div>
       </section>
 
-      
       <section class="donate-trust">
         <div class="container">
           <p>
@@ -271,44 +291,51 @@
       </div>
     </footer>
     <div class="donation-modal" id="donationModal">
-  <div class="modal-content">
-    <span class="close-modal" id="closeModal">&times;</span>
+      <div class="modal-content">
+        <span class="close-modal" id="closeModal">&times;</span>
 
-    <h2>Thank You for Choosing to Donate ❤️</h2>
+        <h2>Thank You for Choosing to Donate ❤️</h2>
 
-    <p class="intro-text">
-      Your generosity is about to make a real difference in someone's life.
-      Please follow the steps below to complete your donation:
-    </p>
+        <p class="intro-text">
+          Your generosity is about to make a real difference in someone's life.
+          Please follow the steps below to complete your donation:
+        </p>
 
-    <div class="steps">
-      <p><strong>Step 1:</strong> Transfer the amount below to our account</p>
+        <div class="steps">
+          <p>
+            <strong>Step 1:</strong> Transfer the amount below to our account
+          </p>
 
-      <h3 id="donationAmount">₦0</h3>
+          <h3 id="donationAmount">₦0</h3>
+          <h4 id="selectedPatient" class="selected-patient">
+            Beneficiary: FNH Foundation
+          </h4>
 
-      <div class="bank-details">
-        <p><strong>Account Number:</strong> 0510034648</p>
-        <p><strong>Bank:</strong> GT Bank</p>
-        <p><strong>Account Name:</strong> Feat Ndugwas Heritage Kidney Foundation</p>
+          <div class="bank-details">
+            <p><strong>Account Number:</strong> 0510034648</p>
+            <p><strong>Bank:</strong> GT Bank</p>
+            <p>
+              <strong>Account Name:</strong> Feat Ndugwas Heritage Kidney
+              Foundation
+            </p>
+          </div>
+
+          <button class="copy-btn" onclick="copyAccount()">
+            Copy Account Number
+          </button>
+
+          <p class="step-2">
+            <strong>Step 2:</strong> After payment, send your receipt via
+            WhatsApp
+          </p>
+
+          <a id="whatsappLink" target="_blank" class="whatsapp-btn">
+            Send Receipt on WhatsApp
+          </a>
+        </div>
+
+        <p class="thank-you-note">We sincerely appreciate your support 🙏</p>
       </div>
-
-      <button class="copy-btn" onclick="copyAccount()">
-        Copy Account Number
-      </button>
-
-      <p class="step-2">
-        <strong>Step 2:</strong> After payment, send your receipt via WhatsApp
-      </p>
-
-      <a id="whatsappLink" target="_blank" class="whatsapp-btn">
-        Send Receipt on WhatsApp
-      </a>
     </div>
-
-    <p class="thank-you-note">
-      We sincerely appreciate your support 🙏
-    </p>
-  </div>
-</div>
   </body>
 </html>

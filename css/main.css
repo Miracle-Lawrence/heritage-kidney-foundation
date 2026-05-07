@@ -2355,8 +2355,8 @@ input:focus {
     rgba(0, 102, 153, 0.75)
   );
 
-  backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 
   justify-content: center;
   align-items: center;
@@ -2508,6 +2508,18 @@ input:focus {
   color: #0a2c5e;
   text-align: center;
   margin: 15px 0;
+}
+
+
+.patient-select {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  background: #fff;
 }
 
 /* RESPONSIVE */
