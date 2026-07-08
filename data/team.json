@@ -1,0 +1,68 @@
+[
+  {
+    "name": "John Doe",
+    "role": "Executive Director",
+    "image": "images/team/executive-director.webp",
+    "description": "Provides strategic leadership, oversees organizational operations, builds partnerships, and ensures the foundation fulfills its mission and long-term vision."
+  },
+  {
+    "name": "Jane Smith",
+    "role": "Programs Officer",
+    "image": "images/team/programs-officer.webp",
+    "description": "Coordinates community programs, manages health initiatives, and ensures successful implementation of projects across target communities."
+  },
+  {
+    "name": "Michael Johnson",
+    "role": "Finance & Administration Officer",
+    "image": "images/team/finance-admin.webp",
+    "description": "Manages financial records, budgeting, administrative processes, procurement documentation, and compliance with organizational policies."
+  },
+  {
+    "name": "Sarah Williams",
+    "role": "Communications & Partnership Officer",
+    "image": "images/team/communications.webp",
+    "description": "Leads communications, manages media relations, develops strategic partnerships, and promotes awareness of the foundation's programs."
+  },
+  {
+    "name": "David Brown",
+    "role": "Monitoring & Evaluation Officer",
+    "image": "images/team/monitoring.webp",
+    "description": "Tracks project performance, evaluates program outcomes, prepares reports, and ensures evidence-based decision making."
+  },
+  {
+    "name": "Emily Davis",
+    "role": "Logistics/Procurement Officer",
+    "image": "images/team/logistics.webp",
+    "description": "Coordinates procurement activities, manages inventory, transportation logistics, and ensures timely delivery of resources."
+  },
+  {
+    "name": "James Wilson",
+    "role": "Driver",
+    "image": "images/team/driver.webp",
+    "description": "Provides safe transportation for staff, medical supplies, outreach teams, and official organizational activities."
+  },
+  {
+    "name": "Olivia Taylor",
+    "role": "Office Assistant",
+    "image": "images/team/office-assistant.webp",
+    "description": "Supports daily office operations, handles documentation, assists visitors, and maintains administrative records."
+  },
+  {
+    "name": "Daniel Moore",
+    "role": "Security Guard",
+    "image": "images/team/security.webp",
+    "description": "Maintains the safety and security of staff, visitors, office premises, and organizational assets."
+  },
+  {
+    "name": "Sophia Anderson",
+    "role": "Community Outreach Officer",
+    "image": "images/team/community-outreach.webp",
+    "description": "Engages communities through awareness campaigns, health education, stakeholder engagement, and outreach initiatives."
+  },
+  {
+    "name": "Christopher Thomas",
+    "role": "Medical Programs Officer",
+    "image": "images/team/medical-programs.webp",
+    "description": "Coordinates medical outreach activities, supports healthcare partnerships, and oversees kidney health screening programs."
+  }
+]

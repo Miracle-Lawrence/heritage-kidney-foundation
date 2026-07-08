@@ -6,15 +6,16 @@
     <meta name="author" content="Miracle Lawrence" />
     <meta
       name="description"
-      content="Stay updated on kidney health events by FEAT NDUGWAS Heritage Kidney Foundation, Abuja. Workshops, awareness campaigns, and community programs."
+      content="FEAT Ndugwas Heritage Kidney Foundation is a non-profit organization dedicated to promoting kidney health awareness, providing support to individuals affected by kidney disease, and advocating for better healthcare policies. Our mission is to save lives through education, early detection, and community outreach programs."
     />
 
     <link rel="Icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/main.js" defer></script>
-    <script src="js/forms.js" defer></script>
-    <script type="module" src="js/events.js"></script>
-    <title>Events - FEAT NDUGWAS HERITAGE KIDNEY FOUNDATION</title>
+    <script src="js/hero.js" defer></script>
+    <script src="js/donate.js" defer></script>
+    <script src="js/team.js" defer></script>
+    <title>Team - FEAT NDUGWAS HERITAGE KIDNEY FOUNDATION</title>
   </head>
   <body>
     <header>
@@ -23,11 +24,12 @@
         <!-- TOP ROW -->
         <div class="nav-top">
           <div class="logo">
-            <a href="index.html"
-              ><img
+            <a href="index.html">
+              <img
                 src="images/logo.webp"
                 alt="FEAT Ndugwas Heritage Kidney Foundation Logo"
-            /></a>
+              />
+            </a>
             <span> FEAT NDUGWAS HERITAGE KIDNEY FOUNDATION</span>
           </div>
 
@@ -81,141 +83,34 @@
       </div>
     </header>
     <main>
-      <section class="event-hero">
+
+        <section class="event-hero">
         <div class="event-hero-overlay">
-          <h1>Events</h1>
+          <h1>Teams</h1>
         </div>
       </section>
 
-      <section class="events-section">
-        <h2>Upcoming Events</h2>
-        <div id="events-container" class="events-grid"></div>
-      </section>
+        <section class="team-section">
 
-      <div id="event-modal" class="modal">
-        <div class="modal-content">
-          <span class="close-btn">&times;</span>
+    <div class="container">
 
-          <div class="modal-image">
-            <img id="modal-img" src="" alt="" />
-          </div>
-
-          <div class="modal-body">
-            <h3 id="modal-title"></h3>
-            <p id="modal-details"></p>
-            <p id="modal-location"></p>
-          </div>
-
-          <div class="modal-nav">
-            <button id="prev-btn">← Prev</button>
-            <button id="next-btn">Next →</button>
-          </div>
-        </div>
-      </div>
-
-      <section class="volunteer-section" id="volunteer-section">
-        <div class="volunteer-content">
-          <h2>Join Our Mission</h2>
-          <p>
-            Whether as a volunteer or a partner, your support helps us save
-            lives and bring hope to kidney patients.
-          </p>
+        <div class="section-heading">
+            <h1>Meet Our Team</h1>
+            <p>
+                Our dedicated team is committed to improving kidney health through
+                awareness, prevention, education, advocacy, and quality community
+                healthcare services.
+            </p>
         </div>
 
-        <div class="forms-wrapper">
-          <!-- VOLUNTEER FORM -->
-          <form id="volunteer-form" class="volunteer-form">
-            <h3 class="form-title">Become a Volunteer</h3>
+        <div id="teamContainer" class="team-grid"></div>
 
-            <input
-              type="text"
-              name="full_name"
-              placeholder="Full Name"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              required
-            />
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone Number"
-              required
-            />
+    </div>
 
-            <select name="role" aria-label="Preferred Role" required>
-              <option value="">Preferred Role</option>
-              <option>Event Volunteer</option>
-              <option>Outreach Support</option>
-              <option>Medical Assistance</option>
-            </select>
+</section>
 
-            <textarea
-              name="message"
-              placeholder="Why do you want to volunteer?"
-              rows="4"
-            ></textarea>
-
-            <button type="submit" class="volunteer-btn">
-              Join as Volunteer
-            </button>
-          </form>
-
-          <!-- PARTNER FORM -->
-          <form id="partner-form" class="volunteer-form">
-            <h3 class="form-title">Become a Partner</h3>
-
-            <input
-              type="text"
-              name="organization"
-              placeholder="Organization Name"
-              required
-            />
-            <input
-              type="text"
-              name="contact_person"
-              placeholder="Contact Person"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              required
-            />
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone Number"
-              required
-            />
-
-            <label for="partnership_type">Type of Partnership</label>
-            <select id="partnership_type" name="partnership_type" required>
-              <option value="">Select Partnership Type</option>
-              <option>Financial Support</option>
-              <option>Medical Support</option>
-              <option>NGO Collaboration</option>
-              <option>Government Agency</option>
-            </select>
-
-            <textarea
-              name="message"
-              placeholder="How would you like to partner with us?"
-              rows="4"
-            ></textarea>
-
-            <button type="submit" class="volunteer-btn">
-              Submit Partnership
-            </button>
-          </form>
-        </div>
-      </section>
-    </main>
-    <div class="overlay" id="overlay"></div>
+    </main> 
+ <div class="overlay" id="overlay"></div>
     <footer class="footer">
       <div class="footer-container">
         <!-- Left Section -->
@@ -320,13 +215,53 @@
           <span>Umedike Ukpai</span>
         </p>
       </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</footer>
+    <div class="donation-modal" id="donationModal">
+      <div class="modal-content">
+        <span class="close-modal" id="closeModal">&times;</span>
 
-    <script>
-      (function () {
-        emailjs.init("a27xbBsIJUvGDy63a"); // replace this
-      })();
-    </script>
+        <h2>Thank You for Choosing to Donate ❤️</h2>
+
+        <p class="intro-text">
+          Your generosity is about to make a real difference in someone's life.
+          Please follow the steps below to complete your donation:
+        </p>
+
+        <div class="steps">
+          <p>
+            <strong>Step 1:</strong> Transfer the amount below to our account
+          </p>
+
+          <h3 id="donationAmount">₦0</h3>
+          <h4 id="selectedPatient" class="selected-patient">
+            Beneficiary: FNH Foundation
+          </h4>
+
+          <div class="bank-details">
+            <p><strong>Account Number:</strong> 0510034648</p>
+            <p><strong>Bank:</strong> GT Bank</p>
+            <p>
+              <strong>Account Name:</strong> Feat Ndugwas Heritage Kidney
+              Foundation
+            </p>
+          </div>
+
+          <button class="copy-btn" onclick="copyAccount()">
+            Copy Account Number
+          </button>
+
+          <p class="step-2">
+            <strong>Step 2:</strong> After payment, send your receipt via
+            WhatsApp
+          </p>
+
+          <a id="whatsappLink" target="_blank" class="whatsapp-btn">
+            Send Receipt on WhatsApp
+          </a>
+        </div>
+
+        <p class="thank-you-note">We sincerely appreciate your support 🙏</p>
+      </div>
+    </div>
   </body>
 </html>
