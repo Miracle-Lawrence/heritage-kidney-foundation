@@ -1,25 +1,11 @@
 {
   "patients": [
     {
-      "name": "John, 42",
-      "image": "images/patient1.webp",
-      "description": "Requires urgent dialysis support",
-      "raised": 200000,
-      "target": 500000
-    },
-    {
       "name": "Gberikon Samuel Fater, 28 years",
       "image": "images/GberikonSamuelfater.webp",
       "description": "Needs kidney transplant assistance",
       "raised": 2503500,
       "target": 28953000
     },
-    {
-      "name": "Sammy, 50",
-      "image": "images/patient3.webp",
-      "description": "Struggling with weekly dialysis costs",
-      "raised": 80000,
-      "target": 300000
-    }
   ]
 }
