@@ -6,7 +6,7 @@
     <meta name="author" content="Miracle Lawrence" />
     <meta
       name="description"
-      content="Support FEAT NDUGWAS Heritage Kidney Foundation in Abuja. Donate to improve kidney care, patient support, and community health initiatives."
+      content="FEAT Ndugwas Heritage Kidney Foundation is a non-profit organization dedicated to promoting kidney health awareness, providing support to individuals affected by kidney disease, and advocating for better healthcare policies. Our mission is to save lives through education, early detection, and community outreach programs."
     />
 
     <link rel="Icon" href="images/favicon.ico" />
@@ -14,7 +14,8 @@
     <script src="js/main.js" defer></script>
     <script src="js/hero.js" defer></script>
     <script src="js/donate.js" defer></script>
-    <title>Donate - FEAT NDUGWAS HERITAGE KIDNEY FOUNDATION</title>
+    <script src="js/team.js" defer></script>
+    <title>Team - FEAT NDUGWAS HERITAGE KIDNEY FOUNDATION</title>
   </head>
   <body>
     <header>
@@ -82,109 +83,48 @@
       </div>
     </header>
     <main>
-      <section class="donate-hero">
-        <div class="donate-hero-content">
-          <h1>Give the Gift of Life</h1>
-          <p>
-            Your support can help provide dialysis, fund transplants, and give
-            hope to kidney patients who cannot afford treatment.
-          </p>
-          <a href="#donate-form" class="give-btn">Donate Now →</a>
+
+        <section class="event-hero">
+        <div class="event-hero-overlay">
+          <h1>Teams</h1>
         </div>
       </section>
-
-      <section class="donate-section" id="donate-form">
-        <h1 class="donate-title">Support a Life</h1>
-        <p class="donate-subtext">
-          Choose how you want to make an impact. Every contribution saves lives.
-        </p>
-
-        <div class="donation-wrapper">
-          <!-- DIALYSIS -->
-          <div class="donation-box dialysis">
-            <h2>Dialysis Support</h2>
-            <p class="donation-desc">
-              Help patients who require continuous dialysis treatment to stay
-              alive.
+    
+      <section class="board-section">
+    <div class="container">
+        <div class="section-heading">
+            <h1>Board of Trustees</h1>
+            <p>
+                Our Board of Trustees provides strategic oversight, governance,
+                and guidance to ensure the foundation remains committed to its
+                mission of improving kidney health and transforming lives.
             </p>
+        </div>
+        <div id="boardContainer" class="board-grid"></div>
+    </div>
+</section>
 
-            <!-- PATIENT SELECT -->
-            <label for="beneficiary-select">Select Beneficiary</label>
-            <select
-              id="beneficiary-select"
-              class="patient-select dialysis-patient"
-            >
-              <option value="FNH Foundation">
-                Donate to Foundation General Support
-              </option>
-            </select>
+        <section class="team-section">
 
-            <div class="amount-options">
-              <button data-amount="50000">₦50K</button>
-              <button data-amount="100000">₦100K</button>
-              <button data-amount="250000">₦250K</button>
-              <button data-amount="500000">₦500K</button>
-              <button data-amount="1000000">₦1M</button>
-            </div>
+    <div class="container">
 
-            <input
-              type="number"
-              placeholder="Enter amount (₦)"
-              class="amount-input"
-            />
-
-            <button class="donate-btn" onclick="payWithPaystack('dialysis')">
-              Donate for Dialysis
-            </button>
-          </div>
-
-          <!-- TRANSPLANT -->
-          <div class="donation-box transplant">
-            <h2>Kidney Transplant Support</h2>
-            <p class="donation-desc">
-              Help patients access life-saving kidney transplant procedures.
+        <div class="section-heading">
+            <h1>Meet Our Team</h1>
+            <p>
+                Our dedicated team is committed to improving kidney health through
+                awareness, prevention, education, advocacy, and quality community
+                healthcare services.
             </p>
-
-            <label for="transplant-patient-select">Select Patient</label>
-
-            <select
-              id="beneficiary-select"
-              class="patient-select transplant-patient"
-            >
-              <option value="FNH Foundation">Donate to Foundation</option>
-            </select>
-
-            <div class="amount-options">
-              <button data-amount="500000">₦500K</button>
-              <button data-amount="1000000">₦1M</button>
-              <button data-amount="2000000">₦2M</button>
-              <button data-amount="3000000">₦3M</button>
-              <button data-amount="5000000">₦5M</button>
-            </div>
-
-            <input
-              type="number"
-              placeholder="Enter amount (₦)"
-              class="amount-input"
-            />
-
-            <button class="donate-btn" onclick="payWithPaystack('transplant')">
-              Donate for Transplant
-            </button>
-          </div>
         </div>
-      </section>
 
-      <section class="donate-trust">
-        <div class="container">
-          <p>
-            100% of your donation goes directly to supporting kidney patients.
-            We are committed to transparency, accountability, and impact.
-          </p>
-        </div>
-      </section>
-    </main>
-    <div class="overlay" id="overlay"></div>
+        <div id="teamContainer" class="team-grid"></div>
+
+    </div>
+
+</section>
+
+    </main> 
+ <div class="overlay" id="overlay"></div>
     <footer class="footer">
       <div class="footer-container">
         <!-- Left Section -->
@@ -289,7 +229,7 @@
           <span>Umedike Ukpai</span>
         </p>
       </div>
-    </footer>
+</footer>
     <div class="donation-modal" id="donationModal">
       <div class="modal-content">
         <span class="close-modal" id="closeModal">&times;</span>
